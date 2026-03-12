@@ -232,13 +232,14 @@ item.classList.add("active");
 
 });
 
-document.addEventListener("DOMContentLoaded", function(){
 
-(function(){
+document.addEventListener("DOMContentLoaded", function () {
+
+(function () {
 emailjs.init("tMxaYo2Amlv5IQoeh");
 })();
 
-document.getElementById("contactForm").addEventListener("submit", function(e){
+document.getElementById("contactForm").addEventListener("submit", function (e) {
 
 e.preventDefault();
 
@@ -248,15 +249,15 @@ contact: document.getElementById("contact").value,
 message: document.getElementById("message").value
 };
 
-emailjs.send("service_rsgdj93","template_d2ph0wn",params)
-
-.then(function(){
+emailjs.send("service_rsgdj93", "template_d2ph0wn", params)
+.then(function (response) {
 
 alert("Message Sent Successfully!");
 document.getElementById("contactForm").reset();
 
-}, function(error){
+}, function (error) {
 
+console.log("FAILED", error);
 alert("Failed to send message");
 
 });
