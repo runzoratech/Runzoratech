@@ -245,9 +245,12 @@ e.preventDefault();
 
 var params = {
 name: document.getElementById("name").value,
-contact: document.getElementById("contact").value,
+contact: document.getElementById("contact_info").value,
 message: document.getElementById("message").value
 };
+
+console.log("Contact value:", document.getElementById("contact_info").value);
+
 
 emailjs.send("service_rsgdj93", "template_d2ph0wn", params)
 .then(function (response) {
