@@ -245,13 +245,13 @@ e.preventDefault();
 
 var params = {
 name: document.getElementById("name").value,
-contact: document.getElementById("contact_info").value,
+contact_info: document.getElementById("contact_info").value,
 message: document.getElementById("message").value
 };
 
 
 console.log("Name:", params.name);
-console.log("Contact_info:", params.contact_info);  
+console.log("Contact:", params.contact_info);  
 console.log("Message:", params.message);
 
 console.log("Contact value:", document.getElementById("contact_info").value);
