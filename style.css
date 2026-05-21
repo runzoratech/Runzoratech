@@ -18,7 +18,7 @@ body.dark{
 body{
   background:var(--bg);
   color:var(--text);
-  transition: background 1s ease, color 1s ease;
+  transition: background 0s ease, color 0s ease;
 }
 html{scroll-behavior:smooth;}
 header{
@@ -345,7 +345,7 @@ header{
 .about{
   padding:1px 10%;
  background:var(--bg);
-   transition:background 0.5s ease;
+   transition:background 0s ease;
 }
 .about-top h1{
   font-size:30px;
